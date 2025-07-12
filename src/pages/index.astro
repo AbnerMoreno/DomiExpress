@@ -1,11 +1,57 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Header from "../components/Header.astro";
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <!-- <Welcome /> -->
+  <section class="contenedor">
+    <article class="Contendor-textos">
+      <div class="textos__contenedor">
+        <h1 class="textos__titulo">Reliable <br> Delivery Service</h1>
+        <!-- <h1 class="textos__titulo">Delivery Service</h1> -->
+      </div>
+      <p class="textos__parrafos">
+        fast and efficient delivery of documents, packages, and more.
+      </p>
+      <button class="boton-textos"> Get Started </button>
+    </article>
+    <img class="img__index" src="/src/assets/logo.png" alt="" srcset="" />
+  </section>
 </Layout>
+
+<style>
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+  }
+  .textos__contenedor {
+    width: 35%;
+  }
+  .contendor-textos {
+    width: 40%;
+	margin-left: 83px; !important
+  }
+  .img__index {
+    width: 600px;
+    height: 400px;
+  }
+
+  .textos__titulo {
+    font-size: 60px;
+    color: #1e2a46;
+	width: 521px;
+  }
+
+  .textos__parrafos{
+	font-size: 28px;
+	width: 71%;
+  }
+</style>
