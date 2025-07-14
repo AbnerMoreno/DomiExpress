@@ -20,7 +20,12 @@ import Layout from "../layouts/Layout.astro";
       </p>
       <button class="boton-textos"> Get Started </button>
     </article>
-    <img class="img__index" src="/src/assets/logo.png" alt="" srcset="" />
+    <img
+      class="img__index"
+      src="/src/assets/nuevomensajero.png"
+      alt=""
+      srcset=""
+    />
   </section>
 </Layout>
 
@@ -40,7 +45,11 @@ import Layout from "../layouts/Layout.astro";
   }
   .img__index {
     width: 49%;
-    height: 400px;
+    width: 49%;
+    height: 80%;
+    margin-bottom: 77px;
+    height: 80%;
+    margin-bottom: 77px;
     animation: moveScooter 2s ease-in-out infinite alternate;
   }
 
@@ -75,10 +84,10 @@ import Layout from "../layouts/Layout.astro";
     0% {
       transform: translateY(0);
     }
-    30%{
+    30% {
       transform: translateX(12px);
     }
-    50%{
+    50% {
       transform: translateX(12px);
       transform: translateY(50px);
     }
@@ -90,7 +99,7 @@ import Layout from "../layouts/Layout.astro";
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateX(500px);
     }
     to {
       opacity: 1;
