@@ -28,6 +28,9 @@ console.log("iniciando");
       display: flex;
       justify-content: center;
       color: #1e2a46;
+      /* animation-name: swipe ease-in-out;
+      animation-duration: 1.5s ; */
+      animation: swipe 1s ease-in-out;
     }
   }
 
@@ -46,6 +49,15 @@ console.log("iniciando");
       font-style: none;
       color: #1e2a46;
       text-decoration: none;
+    }
+  }
+
+  @keyframes swipe {
+    from{
+      transform: translate3d(0, -250%, 0);
+    }
+    to{
+      transform: translate3d(0,0,0);
     }
   }
 </style>
